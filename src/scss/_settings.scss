@@ -1,0 +1,51 @@
+body {
+  @extend %ProximaNova;
+  color: var(--color-black);
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1270px;
+}
+
+.site-container {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 59px;
+  @extend %Gilroy;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  padding-bottom: 110px;
+  position: relative;
+  text-align: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    background-image: url('../img/icon-down-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.page-section {
+  padding: 40px 0;
+}

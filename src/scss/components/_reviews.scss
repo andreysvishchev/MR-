@@ -1,0 +1,145 @@
+.reviews {
+  &__headline {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 25px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__letters {
+    margin-right: 20px;
+  }
+}
+
+
+.review {
+  display: flex;
+  margin-bottom: 35px;
+  max-width: 820px;
+
+
+  &__photo {
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 3px;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__descr {
+    padding: 10px 30px 10px 35px;
+    background-color: var(--color-white);
+    transition: all .3s;
+
+    &:hover {
+      background: rgba(254, 208, 54, 0.1);
+    }
+  }
+
+  &__rating {
+    background-color: var(--color-yellow);
+    padding: 3px 25px 3px 8px;
+    border-radius: 3px;
+    position: relative;
+    margin-right: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      top: 5px;
+      right: 5px;
+      background-image: url('../img/star.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__author {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+  }
+
+  &__way {
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: auto;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+  }
+}
+
+.video {
+  padding: 25px;
+  background-color: var(--color-gray);
+
+  &__headline {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 25px;
+  }
+
+  &__item {
+    width: 355px;
+    height: 190px;
+    margin-bottom: 35px;
+    display: block;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 44px;
+      height: 44px;
+      background-image: url('../img/button-play.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 70px;
+      height: 21px;
+      bottom: 20px;
+      right: 20px;
+      background-image: url('../img/logo.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.9;
+    }
+
+
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    @extend %Gilroy;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: var(--color-white);
+  }
+}

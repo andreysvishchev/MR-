@@ -1,0 +1,97 @@
+.hero {
+  background-color: var(--color-yellow);
+  margin-bottom: 30px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    margin-top: 105px;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 58px;
+    line-height: 72px;
+    @extend %Gilroy;
+    color: var(--color-white);
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    max-width: 600px;
+  }
+
+  &__master {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    margin-bottom: 35px;
+  }
+}
+
+
+.hero-form {
+  display: flex;
+  align-items: center;
+
+  &__input {
+    padding: 18px 18px 18px 50px;
+    max-width: 260px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border: none;
+    outline: none;
+    min-height: 60px;
+    border-radius: 3px;
+
+    &::placeholder {
+      font-size: 18px;
+      line-height: 22px;
+      color: var(--color-black);
+    }
+  }
+
+  &__btn {
+    margin-left: -5px;
+    padding: 16px 23px;
+    background-color: var(--color-blue);
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    @extend %Gilroy;
+    color: var(--color-white);
+    min-height: 60px;
+    border-radius: 3px;
+  }
+
+  &__label {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 18px;
+      left: 10px;
+      width: 27px;
+      height: 22px;
+      background-image: url('../img/rus.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  --color-black: #3E3E3E;
+  --color-white: #fff;
+  --color-blue: #3C93F0;
+  --color-yellow: #FED036;
+  --color-gray: #EDF3F6;
+  --color-green: #09D743;
+}
+
+%ProximaNova {
+  font-family: "ProximaNova", sans-serif;
+}
+
+%Gilroy {
+  font-family: "Gilroy", sans-serif;
+}

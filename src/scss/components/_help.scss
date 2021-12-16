@@ -1,0 +1,77 @@
+.help {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 20px;
+  }
+}
+
+.category {
+  padding: 20px;
+  background-color: var(--color-gray);
+  position: relative;
+
+  &__title {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__item {
+    margin-bottom: 7px;
+    position: relative;
+    padding-left: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 8px;
+      height: 8px;
+      background-color: var(--color-blue);
+      border-radius: 1px;
+    }
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-black)
+  }
+
+  &__details {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-blue);
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      top: 3px;
+      right: 0;
+      background-image: url('../img/arrow-blue.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
